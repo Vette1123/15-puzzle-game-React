@@ -8,6 +8,7 @@ import Cell from '../Cell'
 const Board = () => {
   const [mainCells, setMainCells] = useState([])
   const [counter, setCounter] = useState(0)
+
   useEffect(() => {
     const cells = createBoard(BOARD_SIZE)
     setMainCells(shuffle(cells))
@@ -46,7 +47,7 @@ const Board = () => {
   return (
     <>
       <div className={classes.Container}>
-        {mainCells.map((value, index) => {
+        {mainCells.map((value) => {
           return (
             <div key={value} className={classes['Cell-Style']}>
               <Cell value={value} handleClick={handleMove} />

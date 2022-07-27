@@ -7,7 +7,6 @@
   cursor: default;
   touch-action: none;
   background-color: #355764;
-
   border-radius: 12px;
   width: 500px;
   height: 500px;
@@ -16,8 +15,9 @@
 .Cell-Style {
   width: 106.25px;
   height: 106.25px;
-  margin-right: 15px;
-  border-radius: 10px;
+  margin-right: 25px;
+  margin-top: 5px;
+  border-radius: 25px;
   background-color: rgb(61, 41, 99);
 }
 .Congratulation {

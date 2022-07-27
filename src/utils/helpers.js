@@ -9,7 +9,3 @@ export const createBoard = (size) => {
 export const hasWon = (array) => {
   return array.every((value, index) => value === index)
 }
-
-export const resetGame = (size) => {
-  return Array.from({ length: size }, (item, index) => index)
-}
