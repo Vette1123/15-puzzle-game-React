@@ -7,5 +7,8 @@ export const createBoard = (size) => {
 }
 
 export const hasWon = (array) => {
-  return array.every((value, index) => value === index)
+  return array.every(
+    (item, index) =>
+      (item === index + 1 && item !== 0) || (item === index && item === 0)
+  )
 }

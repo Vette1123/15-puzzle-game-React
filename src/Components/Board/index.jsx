@@ -14,6 +14,10 @@ const Board = () => {
     setMainCells(shuffle(cells))
   }, [])
 
+  useEffect(() => {
+    console.log(mainCells)
+  }, [mainCells])
+
   // handle swap and click move logic
   const swap = (currentValueIndex, zeroIndex) => {
     let temp = [...mainCells]
